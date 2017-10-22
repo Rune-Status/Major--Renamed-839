@@ -2893,7 +2893,7 @@ public class Class570 {
 		}
 		if (context.currentFrame == IncomingFrameMeta.aClass386_4421) {
 			int i_426_ = buffer.readNegatedUByte();
-			short i_427_ = buffer.readShortA(-869978518);
+			int i_427_ = buffer.readShortA();
 			int index = buffer.readUShort();
 			int i_429_ = buffer.readIMEInt();
 			LinkableObject<Npc> linkable = Client.npcs.get(index);
@@ -2904,7 +2904,7 @@ public class Class570 {
 				}
 
 				npc.aClass265_11793.anIntArray2962[i_426_] = i_429_;
-				npc.aClass265_11793.aShortArray2963[i_426_] = i_427_;
+				npc.aClass265_11793.aShortArray2963[i_426_] = (short) i_427_;
 			}
 
 			context.currentFrame = null;
